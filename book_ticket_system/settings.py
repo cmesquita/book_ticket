@@ -89,7 +89,7 @@ DATABASES = {
         'NAME': 'book_ticket',
         'USER': 'book_ticket_user',
         'PASSWORD': 'passw0rd',
-        'HOST': '192.168.47.164',
+        'HOST': '172.31.1.1',
         'PORT': '3306',
     }
 }
