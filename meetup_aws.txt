@@ -1,0 +1,31 @@
+-- 
+  usuario e destino sao escolhido randomicamente ( lista de 3000 usuarios )
+  usuario vai procurar o primeiro ticket disponivel para o destino que ele deseja com valores cujo usuario está disponivel a pagar
+	-- find user ( ramdomly )  user , destination e price  que já nao efetou reserva.
+	http://127.0.0.1:8000/booking/userRandomFind
+	
+	-- find ticket ( booked available , destination , price )
+	http://127.0.0.1:8000/booking/ticketFind?price=150&dest=sao_paulo&avail=0
+
+	-- book ticket ( ticket_id , user_id )
+	
+	-- ticket update ( booked = true )
+	
+	-- find booked_tickets  ( count )
+  
+  sistema vai procurar um assento disponivel para o destino do usuario 
+  sistema vai entregar o ticket com o assento disponivel   
+  sistema vai bookar o ticket caso seja encontrado um ticket disponivel
+  
+  
+-- 
+ prometheus:
+		(auto discovery feature) autodiscovery em caso de autoscaling 
+		(correlacionar incidentes ) correlacionar alertas de performance (cpu) e quantidade de requisicoes http ( http max clients )
+		(plugable) plugins para CLOUDWATCH , NGINX e PYTHON 
+		(DSL) gerar relatorios historicos de quantidade de requisicoes com base no autodiscovery de novas http servers ( a soma de quantidade de requisicoes por http server ) 
+		(sistema de notificacao) notificar agentes externos quando ocorre um evento (pager dutty , email etc...)
+		
+    
+  
+  
